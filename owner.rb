@@ -10,5 +10,6 @@ class Owner
     # Instead of setter for entire collection a method to add animals one by one
     def add_animal(animal)
         @animals.push(animal)
+        animal.owner = self
     end
 end
